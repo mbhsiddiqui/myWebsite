@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
     // Add your code for screens with a max-width of 768px here
     if (rect.top + 10 <= navHeight) {
       imgB.style.transform = "scale(1)";
-      nav.style.borderRadius = "5%";
+      nav.style.borderRadius = "3%";
       nav.style.boxShadow = "0 2px 12px rgba(0, 0, 0, 0.3)";
     } else {
       imgB.style.transform = "scale(0)";
