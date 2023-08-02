@@ -3,6 +3,9 @@ const imgB = document.querySelector(".nav__img");
 const nav = document.querySelector("nav");
 const personalLogo = document.querySelector(".personal__logo");
 
+// Set the initial scale of imgB to 0
+imgB.style.transform = "scale(0)";
+
 window.addEventListener("scroll", () => {
   const rect = imgA.getBoundingClientRect();
   const navHeight = document.querySelector("nav").offsetHeight;
@@ -39,6 +42,3 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
-// Set the initial scale of imgB to 0
-imgB.style.transform = "scale(0)";
