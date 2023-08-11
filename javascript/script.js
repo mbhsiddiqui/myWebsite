@@ -42,3 +42,19 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+const links = document.querySelectorAll(".nav__link--anchor");
+
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const href = link.getAttribute("href");
+    if (href) {
+      const section = document.querySelector(href);
+      if (section) {
+        section.scrollIntoView();
+      }
+    }
+    history.pushState(null, null, " ");
+  });
+});
