@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maaz Siddiqui</title>
+    <link rel="icon" href="./assets/favicon.ico" class="favicon" />
     <link
-      rel="icon"
-      href="./assets/ms-high-resolution-logo-white-on-transparent-background.png"
-      class="favicon"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/aec79e57ae.js"
       crossorigin="anonymous"
@@ -19,7 +19,7 @@
   <body>
     <nav>
       <div class="logoAndText">
-        <a href="#" class="nav__top">
+        <a href="#" class="nav__top nav__link--anchor">
           <img src="./assets/favicon.png" alt="" class="nav__img" />
         </a>
         <div class="personal__logo">Maaz Siddiqui</div>
@@ -188,37 +188,87 @@
           <ul class="project__list">
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/undraw_under_construction_-46-pa.svg"
-                  alt=""
-                  class="project__img"
-                />
+                <img src="./assets/project01.png" alt="" class="project__img" />
                 <div class="project__description">
-                  <h3 class="project__description--titleCS">Coming Soon!</h3>
+                  <h3 class="project__description--title">
+                    REST API Backend Service
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Java, Neo4j (GraphDB), HTML, CSS
+                  </h4>
+                  <p class="project__description--para">
+                    Implemented the backend for a service that computes six
+                    degrees of Kevin Bacon. Using Maven build system, created
+                    REST API endpoints that are supported with Neo4j database.
+                    Practiced software architecture in particular server/client
+                    model. Extended software functionality by adding frontend
+                    component to display the supported endpoints in this
+                    service.
+                  </p>
+                  <div class="project__description--links">
+                    <p class="project__disclaimer">
+                      (Github link coming soon 🙂)
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/undraw_under_construction_-46-pa.svg"
+                  src="./assets/undraw_location_search_re_ttoj.svg"
                   alt=""
                   class="project__img"
                 />
                 <div class="project__description">
-                  <h3 class="project__description--titleCS">Coming Soon!</h3>
+                  <h3 class="project__description--title">
+                    Airplane Navigation System
+                  </h3>
+                  <h4 class="project__description--sub-title">Core Java</h4>
+                  <p class="project__description--para">
+                    Designed a minimum airplane navigation system using some GoF
+                    design patterns. The autopilot software of the aircraft
+                    sends requests to obtain the coordinates from the three GPS
+                    receivers. There are two brands of GPS receivers (two
+                    Honeywell and one Rockwell). The current system employs a
+                    majority voting strategy to determine the coordinate to use.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/mbhsiddiqui/airplaneNavigationSystem"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/undraw_under_construction_-46-pa.svg"
-                  alt=""
-                  class="project__img"
-                />
+                <img src="./assets/project03.png" alt="" class="project__img" />
                 <div class="project__description">
-                  <h3 class="project__description--titleCS">Coming Soon!</h3>
+                  <h3 class="project__description--title">Cop Chase</h3>
+                  <h4 class="project__description--sub-title">Python, OOP</h4>
+                  <p class="project__description--para">
+                    Using core OOP concepts, an algorithm was designed to
+                    autonomously compute the easiest escape route to evade the
+                    cop. The algorithm handles two scenarios: firstly, the
+                    shortest path to the ending point will be deduced based on
+                    the starting and ending points. Secondly, the algorithm will
+                    determine a way to exit the map by itself based on the
+                    starting point only.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/mbhsiddiqui/copChase"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </li>
@@ -228,7 +278,7 @@
     </section>
     <footer>
       <div class="row footer__row">
-        <a href="#" class="footer__anchor">
+        <a href="#" class="footer__anchor nav__link--anchor">
           <figure class="footer__logo">
             <img
               src="./assets/ms-high-resolution-logo-white-on-transparent-background.png"
