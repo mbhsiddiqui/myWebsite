@@ -305,7 +305,19 @@ nav {
   transition: all 300ms ease;
 }
 
+.certification__img {
+  height: 105px;
+  width: 105px;
+  transition: all 300ms ease;
+}
+
 .language:hover .language__img {
+  filter: brightness(75%);
+  opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.language:hover .certification__img {
   filter: brightness(75%);
   opacity: 0.86;
   transform: scale(0.9);
@@ -341,7 +353,20 @@ nav {
   opacity: 0;
 }
 
+.certification__name {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 300ms ease;
+  font-size: 18px;
+  opacity: 0;
+}
+
 .language:hover .language__name {
+  transform: scale(1);
+  opacity: 1;
+}
+.language:hover .certification__name {
   transform: scale(1);
   opacity: 1;
 }
