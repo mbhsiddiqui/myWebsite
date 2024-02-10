@@ -18,81 +18,98 @@
   </head>
   <body>
     <nav>
-      <div class="logoAndText">
-        <a href="#" class="nav__top nav__link--anchor">
-          <img src="./assets/favicon.png" alt="" class="nav__img" />
-        </a>
+      <!-- <div class="logoAndText">
         <div class="personal__logo">Maaz Siddiqui</div>
+      </div> -->
+      <div class="nav__components">
+        <img src="./assets/personal-logo.png" alt="" class="nav__img" />
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#languages"
+              class="nav__link--anchor link__hover-effect link__hover-effect--color"
+              >Languages</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--color"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="https://drive.google.com/file/d/1zRhc8uqAHA2Kj6v5WEjpq2DbmVPDf-Sl/view?usp=sharing"
+              target="_blank"
+              class="nav__link--anchor link__hover-effect link__hover-effect--color"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <ul class="social__link--list">
+          <li class="social__link">
+            <a
+              href="https://www.linkedin.com/in/mbhsiddiqui/"
+              target="_blank"
+              class="social__link--anchor link__hover-effect link__hover-effect--color"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="social__link">
+            <a
+              href="https://github.com/mbhsiddiqui"
+              target="_blank"
+              class="social__link--anchor link__hover-effect link__hover-effect--color"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li class="social__link">
+            <a
+              href="mailto:maaz.haroon@gmail.com"
+              class="social__link--anchor link__hover-effect link__hover-effect--color"
+              ><i class="fa-solid fa-message"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav__link--list">
-        <li class="nav__link">
-          <a
-            href="#languages"
-            class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >Languages</a
-          >
-        </li>
-        <li class="nav__link">
-          <a
-            href="#projects"
-            class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >Projects</a
-          >
-        </li>
-        <li class="nav__link">
-          <a
-            href="mailto:maaz.haroon@gmail.com"
-            class="nav__link--anchor nav__link--anchor-primary"
-            >Contact</a
-          >
-        </li>
-      </ul>
     </nav>
     <section id="about-me">
+      <!-- ABOUT ME -->
       <div class="flex flex-1">
         <div class="about-me__info row">
           <div class="about-me__info--container">
             <figure class="about-me__picture--mask">
               <img
-                src="./assets/me.jpg"
+                src="./assets/favicon_shadow.png"
                 class="about-me__picture"
                 alt="Picture of me"
               />
             </figure>
-            <h1 class="about-me__info--title">
-              Hey! I'm <span class="text--blue">Maaz Siddiqui</span>&nbsp;<span
-                class="wave"
-                >👋</span
-              >
-            </h1>
-            <p class="about-me__info--para">
-              I'm a
-              <strong class="text--blue">Software Engineering</strong> student
-              passionate in developing full-stack applications that postively
-              impact the world.
-            </p>
-            <div class="about-me__links">
-              <a
-                href="https://www.linkedin.com/in/mbhsiddiqui/"
-                target="_blank"
-                class="about-me__link"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="https://github.com/mbhsiddiqui"
-                target="_blank"
-                class="about-me__link"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1zRhc8uqAHA2Kj6v5WEjpq2DbmVPDf-Sl/view?usp=sharing"
-                target="_blank"
-                class="about-me__link"
-              >
-                <i class="fa-solid fa-file"></i>
-              </a>
+            <div class="about-me__info--content">
+              <h1 class="about-me__info--title">
+                Hey! I'm
+                <strong class="text--underline">Maaz Siddiqui</strong
+                >&nbsp;<span class="wave">👋</span>
+              </h1>
+              <p class="about-me__info--para">
+                I'm a
+                <strong class="text--underline">Software Engineering</strong>
+                student passionate in developing full-stack applications that
+                are visually pleasing and postively impact the world.
+              </p>
+            </div>
+            <div class="highlights">
+              <img
+                src="./assets/aws-certified-cloud-practitioner.png"
+                alt="AWS badge"
+                class="aws-certification__img"
+              />
+              <img
+                src="./assets/microsoft-certified-azure-ai-fundamentals.png"
+                alt="AWS badge"
+                class="azure-certification__img"
+              />
             </div>
           </div>
           <figure class="about-me__img--container">
@@ -106,240 +123,235 @@
       </div>
     </section>
     <section id="languages">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            This is my <span class="text--blue">technology stack</span>
-          </h1>
-          <div class="language__list">
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/java-programming-language-icon.svg"
-                  alt="Java logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">Java</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/python-programming-language-icon.svg"
-                  alt="Python logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">Python</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/c-sharp-programming-language-icon.svg"
-                  alt="C# logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">C#</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/react-js-icon.svg"
-                  alt="ReactJS logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">React JS</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/html5.svg"
-                  alt="HTML5 logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">HTML</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/css-icon.svg"
-                  alt="CSS logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">CSS</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/javascript-logo.svg"
-                  alt="JavaScript logo"
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">JavaScript</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/aws-certified-cloud-practitioner.png"
-                  alt="AWS badge"
-                  class="certification__img"
-                />
-              </figure>
-              <span class="certification__name">AWS Cloud Practitioner</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/microsoft-certified-azure-ai-fundamentals.png"
-                  alt="AWS badge"
-                  class="certification__img"
-                />
-              </figure>
-              <span class="certification__name">Azure AI Fundamentals</span>
-            </div>
+      <!-- LANGUAGES -->
+      <div class="languages__container">
+        <h1 class="section__title">
+          This is my <span class="text--underline">technology stack</span>
+        </h1>
+        <div class="language__list">
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/java-programming-language-icon.svg"
+                alt="Java logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">Java</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/python-programming-language-icon.svg"
+                alt="Python logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">Python</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/c-sharp-programming-language-icon.svg"
+                alt="C# logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">C#</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/react-js-icon.svg"
+                alt="ReactJS logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">React JS</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/html5.svg"
+                alt="HTML5 logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">HTML</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/css-icon.svg"
+                alt="CSS logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">CSS</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/javascript-logo.svg"
+                alt="JavaScript logo"
+                class="language__img"
+              />
+            </figure>
+            <span class="language__name">JavaScript</span>
           </div>
         </div>
       </div>
     </section>
     <section id="projects">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            Here are some of my <span class="text--blue">projects</span>
-          </h1>
-          <ul class="project__list">
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="./assets/project01.png" alt="" class="project__img" />
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    REST API Backend Service
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Java, Neo4j (GraphDB), HTML, CSS
-                  </h4>
-                  <p class="project__description--para">
-                    Implemented the backend for a service that computes six
-                    degrees of Kevin Bacon. Using Maven build system, created
-                    REST API endpoints that are supported with Neo4j database.
-                    Practiced software architecture in particular server/client
-                    model. Extended software functionality by adding frontend
-                    component to display the supported endpoints in this
-                    service.
-                  </p>
-                  <div class="project__description--links">
-                    <a
-                      href="https://github.com/mbhsiddiqui/eecs3311Neo4jProject"
-                      target="_blank"
-                      class="project__description--link"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
+      <!-- PROJECTS -->
+      <h1 class="section__title">
+        Here are some of <span class="text--underline">my projects</span>
+      </h1>
+      <div class="project__container">
+        <ul class="project__list">
+          <li class="project"> 
+            <div class="project__wrapper">
+              <div class="project__img--wrapper">
+                <img src="./assets/project04a.png" alt="" class="project__img portfolio__phone" />
+                <img src="./assets/project04b.png" alt="" class="project__img portfolio__web" />
+              </div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Portfolio Website
+                </h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Focused on mobile-first development. Incorporated CSS keyframe animations. 
+                  Implemented JS function to control URL changes
+                </p>
+                <div class="project__description--links">
+                  <a
+                    href="https://github.com/mbhsiddiqui/eecs3311Neo4jProject"
+                    target="_blank"
+                    class="project__description--link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
               </div>
-            </li>
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/undraw_location_search_re_ttoj.svg"
-                  alt=""
-                  class="project__img"
-                />
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Airplane Navigation System
-                  </h3>
-                  <h4 class="project__description--sub-title">Core Java</h4>
-                  <p class="project__description--para">
-                    Designed a minimum airplane navigation system using some GoF
-                    design patterns. The autopilot software of the aircraft
-                    sends requests to obtain the coordinates from the three GPS
-                    receivers. There are two brands of GPS receivers (two
-                    Honeywell and one Rockwell). The current system employs a
-                    majority voting strategy to determine the coordinate to use.
-                  </p>
-                  <div class="project__description--links">
-                    <a
-                      href="https://github.com/mbhsiddiqui/airplaneNavigationSystem"
-                      target="_blank"
-                      class="project__description--link"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
+            </div>
+          </li>
+          <li class="project"> <!-- REST API PROJECT -->
+            <div class="project__wrapper">
+              <img src="./assets/project01.png" alt="" class="project__img" />
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  REST API Backend Service
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Java, Neo4j (GraphDB), HTML, CSS
+                </h4>
+                <p class="project__description--para">
+                  Implemented the backend for a service that computes six degrees
+                  of Kevin Bacon. Using Maven build system, created REST API
+                  endpoints that are supported with Neo4j database. Practiced
+                  software architecture in particular server/client model.
+                  Extended software functionality by adding frontend component to
+                  display the supported endpoints in this service.
+                </p>
+                <div class="project__description--links">
+                  <a
+                    href="https://github.com/mbhsiddiqui/eecs3311Neo4jProject"
+                    target="_blank"
+                    class="project__description--link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
               </div>
-            </li>
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="./assets/project03.png" alt="" class="project__img" />
-                <div class="project__description">
-                  <h3 class="project__description--title">Cop Chase</h3>
-                  <h4 class="project__description--sub-title">Python, OOP</h4>
-                  <p class="project__description--para">
-                    Using core OOP concepts, an algorithm was designed to
-                    autonomously compute the easiest escape route to evade the
-                    cop. The algorithm handles two scenarios: firstly, the
-                    shortest path to the ending point will be deduced based on
-                    the starting and ending points. Secondly, the algorithm will
-                    determine a way to exit the map by itself based on the
-                    starting point only.
-                  </p>
-                  <div class="project__description--links">
-                    <a
-                      href="https://github.com/mbhsiddiqui/copChase"
-                      target="_blank"
-                      class="project__description--link"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img
+                src="./assets/project02.jpeg"
+                alt=""
+                class="project__img airplaneControls__img"
+              />
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Airplane Navigation System
+                </h3>
+                <h4 class="project__description--sub-title">Core Java</h4>
+                <p class="project__description--para">
+                  Designed a minimum airplane navigation system using some GoF
+                  design patterns. The autopilot software of the aircraft sends
+                  requests to obtain the coordinates from the three GPS receivers.
+                  There are two brands of GPS receivers (two Honeywell and one
+                  Rockwell). The current system employs a majority voting strategy
+                  to determine the coordinate to use.
+                </p>
+                <div class="project__description--links">
+                  <a
+                    href="https://github.com/mbhsiddiqui/airplaneNavigationSystem"
+                    target="_blank"
+                    class="project__description--link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/project03.png" alt="" class="project__img" />
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Cop Chase
+                </h3>
+                <h4 class="project__description--sub-title">Python, OOP</h4>
+                <p class="project__description--para">
+                  Using core OOP concepts, an algorithm was designed to
+                  autonomously compute the easiest escape route to evade the cop.
+                  The algorithm handles two scenarios: firstly, the shortest path
+                  to the ending point will be deduced based on the starting and
+                  ending points. Secondly, the algorithm will determine a way to
+                  exit the map by itself based on the starting point only.
+                </p>
+                <div class="project__description--links">
+                  <a
+                    href="https://github.com/mbhsiddiqui/copChase"
+                    target="_blank"
+                    class="project__description--link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
+    <!-- <section class="resume">
+      <div class="resume__container"><i class="fa-solid fa-at"></i></div>
+    </section> -->
     <footer>
       <div class="row footer__row">
-        <a href="#" class="footer__anchor nav__link--anchor">
-          <figure class="footer__logo">
-            <img
-              src="./assets/ms-high-resolution-logo-white-on-transparent-background.png"
-              class="footer__logo--img"
-              alt=""
-            />
-          </figure>
-          <span class="footer__logo--popper">
-            Top
-            <i class="fas fa-arrow-up"></i>
-          </span>
-        </a>
         <div class="footer__social--list">
-          <a
-            href="https://github.com/mbhsiddiqui"
-            target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-            >GitHub</a
-          >
           <a
             href="https://www.linkedin.com/in/maaz-siddiqui-079/"
             target="_blank"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-            >LinkedIn</a
-          >
+            class="footer__social--link"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
           <a
-            href="mailto:maaz.haroon@gmail.com"
-            class="footer__social--link link__hover-effect link__hover-effect--white"
-            >Email</a
-          >
+            href="https://github.com/mbhsiddiqui"
+            target="_blank"
+            class="footer__social--link"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:maaz.haroon@gmail.com" class="footer__social--link"
+            ><i class="fa-regular fa-at"></i
+          ></a>
         </div>
         <div class="footer__copyright">Copyright © 2023 Maaz Siddiqui</div>
       </div>
